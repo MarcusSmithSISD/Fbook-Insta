@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Sheldon ISD News and Updates"
+    >
+
+    <meta
+        name="theme-color"
+        content="#001A4D"
+    >
+
+    <title>Sheldon ISD News</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =========================================================
+         PAGE BACKGROUND
+         ========================================================= -->
+
+    <div class="page-background"></div>
+
+
+    <!-- =========================================================
+         TOP HEADER
+         ========================================================= -->
+
+    <header class="site-header">
+
+        <div class="header-brand">
+
+            <div class="sheldon-mark">
+
+                <div class="sheldon-wordmark">
+                    SHELDON ISD
+                </div>
+
+                <div class="sheldon-tagline">
+                    Where Vision Becomes Legacy
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="header-title">
+
+            <div class="header-kicker">
+                SHELDON ISD
+            </div>
+
+            <h1>
+                NEWS &amp; UPDATES
+            </h1>
+
+        </div>
+
+
+        <div class="header-right">
+
+            <div
+                id="connectionStatus"
+                class="connection-status"
+            >
+                CONNECTING
+            </div>
+
+            <div
+                id="currentDate"
+                class="current-date"
+            >
+                --
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================================================
+         MAIN DISPLAY
+         ========================================================= -->
+
+    <main class="news-display">
+
+        <!-- Loading screen -->
+
+        <section
+            id="loadingScreen"
+            class="loading-screen"
+        >
+
+            <div class="loading-spinner"></div>
+
+            <div class="loading-title">
+                LOADING SHELDON ISD NEWS
+            </div>
+
+            <div class="loading-subtitle">
+                Connecting to live updates...
+            </div>
+
+        </section>
+
+
+        <!-- Error screen -->
+
+        <section
+            id="errorScreen"
+            class="error-screen hidden"
+        >
+
+            <div class="error-icon">
+                !
+            </div>
+
+            <div class="error-title">
+                NEWS FEED TEMPORARILY UNAVAILABLE
+            </div>
+
+            <div
+                id="errorMessage"
+                class="error-message"
+            >
+                Please wait while we reconnect.
+            </div>
+
+        </section>
+
+
+        <!-- News post -->
+
+        <section
+            id="newsCard"
+            class="news-card hidden"
+        >
+
+            <!-- Image area -->
+
+            <div class="news-image-container">
+
+                <img
+                    id="newsImage"
+                    class="news-image"
+                    src=""
+                    alt="Sheldon ISD News"
+                >
+<div
+    id="imageFallback"
+    class="image-fallback"
+>
+    <img
+        src="logo.png"
+        alt="Sheldon ISD - Where Vision Becomes Legacy"
+    >
+</div>
+
+            </div>
+
+
+            <!-- Content area -->
+
+            <div class="news-content">
+
+                <div class="news-meta">
+
+                    <span
+                        id="newsAuthor"
+                        class="news-author"
+                    >
+                        SHELDON ISD
+                    </span>
+
+                    <span class="meta-divider">
+                        •
+                    </span>
+
+                    <span
+                        id="newsDate"
+                        class="news-date"
+                    >
+                        --
+                    </span>
+
+                </div>
+
+
+                <h2
+                    id="newsTitle"
+                    class="news-title"
+                >
+                    Sheldon ISD News
+                </h2>
+
+
+                <div
+                    id="newsBody"
+                    class="news-body"
+                >
+                    Loading...
+                </div>
+
+
+                <div class="news-footer">
+
+                    <div class="facebook-label">
+                        FACEBOOK
+                    </div>
+
+                    <div
+                        id="postNumber"
+                        class="post-number"
+                    >
+                        1 / 1
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================================
+         BOTTOM BRAND BAR
+         ========================================================= -->
+
+    <footer class="site-footer">
+
+        <div class="footer-left">
+
+            <span class="footer-label">
+                SHELDON ISD
+            </span>
+
+            <span class="footer-divider">
+                |
+            </span>
+
+            <span>
+                NEWS &amp; UPDATES
+            </span>
+
+        </div>
+
+
+        <div class="footer-center">
+            #OneSheldon
+        </div>
+
+
+        <div class="footer-right">
+
+            <span>
+                LIVE
+            </span>
+
+            <span
+                id="lastUpdated"
+            >
+                --
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================================================
+         PAGE INDICATOR
+         ========================================================= -->
+
+    <div
+        id="pageIndicator"
+        class="page-indicator"
+    >
+        <span
+            id="pageCurrent"
+        >
+            1
+        </span>
+
+        <span class="page-slash">
+            /
+        </span>
+
+        <span
+            id="pageTotal"
+        >
+            1
+        </span>
+    </div>
+
+
+    <!-- =========================================================
+         JAVASCRIPT
+         ========================================================= -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
